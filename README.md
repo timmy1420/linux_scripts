@@ -9,3 +9,5 @@ Feel free to use for your own distribution.
 - CPU: Intel Core i7 L 620
 - Ram: 8gb
 - Machine: Thinkpad x201
+- Desktop environment: XFCE 4.12
+- Gtk3
