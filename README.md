@@ -1,7 +1,7 @@
 # My Bash scripts
 This is a collection of my scripts made in bash for my daily/weekly tasks.
 
-Feel free to use for you own distribution.
+Feel free to use for your own distribution.
 
 # My setup (and tested on):
 - OS: Arch Linux
