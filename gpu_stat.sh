@@ -18,7 +18,10 @@
 #
 # Have fun :)
 
-gpu_stat=$(tail -1 scripts/gpu_stats)
+# Location to the gpu_stats file
+path=~/scripts
+
+gpu_stat=$(tail -1 $path/gpu_stats)
 emptyString=""
 output="${gpu_stat//'Render/3D/0 '/$emptyString}"
 
