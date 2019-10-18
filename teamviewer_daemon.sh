@@ -4,7 +4,8 @@
 teamviewer --daemon start
 
 # Then launch Teamviewer GUI
-/opt/teamviewer/tv_bin/script/teamviewer
+#/opt/teamviewer/tv_bin/script/teamviewer
+teamviewer
 
 # When teamviewer is closing, stop daemon
-#teamviewer --daemon stop
+teamviewer --daemon stop
