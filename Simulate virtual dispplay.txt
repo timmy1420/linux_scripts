@@ -1,0 +1,5 @@
+xrandr --addmode VIRTUAL1 1920x1080
+xrandr --output VIRTUAL1 --mode 1920x1080 --left-of HDMI2
+
+xrandr --addmode VIRTUAL1 1368x768
+xrandr --output VIRTUAL1 --mode 1368x768 --left-of HDMI2

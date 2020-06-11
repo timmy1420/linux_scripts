@@ -1,8 +1,9 @@
-sudo mount /dev/nvme0n1p4 ~/mount && 
-sudo fallocate -l 15G ~/mount/swapfile &&
-sudo chmod 600 ~/mount/swapfile && 
-sudo mkswap ~/mount/swapfile && 
-sudo swapon ~/mount/swapfile
+# sudo mount /dev/nvme0n1p4 ~/mount && 
+
+sudo fallocate -l 15G ~/.mount/swapfile &&
+sudo chmod 600 ~/.mount/swapfile && 
+sudo mkswap ~/.mount/swapfile && 
+sudo swapon ~/.mount/swapfile
 
 --- Remove swap file
 sudo swapoff ~/mount/swapfile

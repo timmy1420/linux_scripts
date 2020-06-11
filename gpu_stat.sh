@@ -19,7 +19,7 @@
 # Have fun :)
 
 # Location to the gpu_stats file
-path=~/scripts
+path=~/linux_scripts
 
 gpu_stat=$(tail -1 $path/gpu_stats)
 emptyString=""
