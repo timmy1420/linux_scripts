@@ -1,1 +1,1 @@
-echo "Mikari payment testen"
+echo ""
