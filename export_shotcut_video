@@ -1,0 +1,1 @@
+melt input_file.mlt -consumer avformat:output_file.mp4 acodec=libmp3lame vcodec=libx264
