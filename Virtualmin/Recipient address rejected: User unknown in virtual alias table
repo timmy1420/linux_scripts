@@ -1,0 +1,48 @@
+# Postfix Email Issue: "Recipient address rejected: User unknown in virtual alias table"
+
+## Problem
+When sending an email to a specific domain, Gmail responses are rejected with the following error in the logs:
+550 5.1.1 construction@dlaconcu.com: Recipient address rejected: User unknown in virtual alias table
+
+
+## Cause
+This error occurs when the recipient email address is not recognized by Postfix. Specifically, Postfix does not have the correct virtual alias mapping for the recipient email address.
+
+## Steps to Resolve
+
+1. **Check Virtual Alias Table:**
+   Ensure that the recipient email address is correctly defined in your Postfix virtual alias table file, typically located at `/etc/postfix/virtual`.
+
+2. **Add the Virtual Alias:**
+   Edit the `/etc/postfix/virtual` file and add the following line (replace the destination address as needed):
+construction@dlaconcu.com your_local_user_or_alias@domain.com
+
+
+3. **Update Postfix Alias Database:**
+After editing the virtual alias file, run the following command to update the alias database:
+sudo postmap /etc/postfix/virtual
+
+
+4. **Reload Postfix:**
+Reload Postfix to apply the changes:
+sudo systemctl reload postfix
+
+
+5. **Verify Configuration in `main.cf`:**
+Ensure that the `virtual_alias_maps` directive is correctly set in `/etc/postfix/main.cf`:
+virtual_alias_maps = hash:/etc/postfix/virtual
+
+
+6. **Test the Fix:**
+Send another email to `construction@dlaconcu.com` and verify that the email is delivered without the "Recipient address rejected" error.
+
+## Logs
+
+Here’s an example of the error log for reference:
+Sep 5 10:36:36 vmi1196776 postfix/smtpd[1144109]: NOQUEUE: reject: RCPT from mail-qt1-f174.google.com[209.85.160.174]: 550 5.1.1 construction@dlaconcu.com: Recipient address rejected: User unknown in virtual alias table
+
+
+## License
+This documentation is licensed under the MIT License.
+You should now be able to copy and paste it without any formatting issues.
+

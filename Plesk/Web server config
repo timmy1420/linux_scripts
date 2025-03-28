@@ -1,0 +1,12 @@
+From/For Plesk:
+
+https://www.plesk.com/kb/support/how-to-apply-php-fpm-pool-settings-for-all-domains-in-plesk/ (/etc/php/php-fpm.d/www.conf)
+
+https://www.plesk.com/kb/support/apache-keeps-going-down-on-a-plesk-server-server-reached-maxrequestworkers-setting/ (vim /etc/apache2/mods-enabled/mpm_event.conf)
+
+Disable ModSecurity
+
+https://www.plesk.com/kb/support/plesk-and-or-websites-are-inaccessible-sqlstate08004-1040-too-many-connections-error/
+
+Calculate PHP FPM
+https://chrismoore.ca/2018/10/finding-the-correct-pm-max-children-settings-for-php-fpm/

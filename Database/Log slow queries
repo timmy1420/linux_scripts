@@ -1,0 +1,6 @@
+Go to:
+/etc/mysql/my.cnf
+
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/slow-query.log
+long_query_time = 2  # Log queries that take longer than 1 second

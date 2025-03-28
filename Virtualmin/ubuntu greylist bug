@@ -1,0 +1,11 @@
+1. In "vim /etc/default/postgrey"
+
+2. CHANGE this:
+POSTGREY_OPTS="--inet=10023"
+
+To:
+
+POSTGREY_OPTS="--inet=127.0.0.1:100230
+
+3. Then restart:
+systemctl restart postgrey

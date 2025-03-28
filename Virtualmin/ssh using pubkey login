@@ -1,0 +1,14 @@
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+chown -R $(whoami):$(whoami) ~/.ssh
+
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+PasswordAuthentication no
+PermitRootLogin prohibit-password
+ChallengeResponseAuthentication no
+UsePAM yes
+
+sudo systemctl restart sshd
+
+For debuggin: ssh -vvv username@your-server -p <por-number>

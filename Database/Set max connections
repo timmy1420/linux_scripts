@@ -1,0 +1,6 @@
+Go to:
+/etc/mysql/my.cnf
+
+max_connections=1000
+
+Amazon Linux 2023: vim /etc/my.cnf.d/mariadb-server.cnf

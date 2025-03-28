@@ -1,0 +1,3 @@
+pkill -STOP firefox
+
+pkill -CONT firefox

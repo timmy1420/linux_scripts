@@ -1,0 +1,4 @@
+firewall-cmd --permanent --zone=public --add-rich-rule='rule family="ipv4" source address=0.0.0.0 drop';
+firewall-cmd --permanent --zone=public --add-rich-rule='rule family="ipv4" source address=0.0.0.0 drop';
+
+firewall-cmd --reload

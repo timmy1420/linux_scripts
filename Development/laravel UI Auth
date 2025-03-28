@@ -1,0 +1,15 @@
+https://dev.to/chabbasaad/laravel-crud-with-blade-and-authentification-and-seeder-5af8
+https://stackoverflow.com/questions/73045616/vite-manifest-not-found
+
+VueJS 2
+php artisan ui vue
+Add this to the <head>:
+@vite(['resources/sass/app.scss', 'resources/js/app.js'])
+Add the "app" id to the <body>: <body id="app">
+
+Optional commands:
+npm install --save-dev vue vue-template-compiler
+npm install --save-dev @vitejs/plugin-vue
+php artisan ui vue
+npm update vue-loader
+composer require laravel/ui && php artisan ui vue
