@@ -1,0 +1,8 @@
+Server:
+ssh-keygen -t rsa -b 4096 -m PEM -f ~/master-key.pem
+Kopieer de inhoud van master-key.pem.pub naar de ~/.ssh/authorized_keys van de gewenste gebruikers op elke server.
+
+Client:
+sudo chmod 400 master-key.pem
+sudo chown $(whoami):$(whoami) ~/master-key.pem
+ssh -i master-key.pem gebruiker@ip_of_hostname

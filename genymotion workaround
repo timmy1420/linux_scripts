@@ -1,0 +1,9 @@
+MESA: error: dri3_alloc_render_buffer:1634 xcb_dri3_pixmap_from_buffer[s] failed
+MESA: error: X error: 11
+
+Fix:
+LIBGL_ALWAYS_SOFTWARE=1 ./genymotion
+
+#!/bin/bash
+export LIBGL_DRI3_DISABLE=1
+~/genymotion/genymotion

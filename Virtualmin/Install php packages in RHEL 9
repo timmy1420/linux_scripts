@@ -1,0 +1,1 @@
+yum install php84-php-cli php84-php-common php84-php-fpm php84-php-gd php84-php-intl php84-php-mbstring php84-php-mysqlnd php84-php-opcache php84-php-pdo php84-php-pecl-zip php84-php-pspell php84-php-xml php84-runtime
