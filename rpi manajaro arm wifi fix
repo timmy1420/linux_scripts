@@ -1,0 +1,3 @@
+* Create a new config file "/etc/modprobe.d/brcmfmac.conf".
+* Add the following line "options brcmfmac feature_disable=0x2000".
+* Save and reboot.

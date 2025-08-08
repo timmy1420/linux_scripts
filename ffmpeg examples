@@ -1,0 +1,12 @@
+🔧 1. Convert with libx264 (CPU encoder)
+ffmpeg -i input.mp4 \
+  -c:v libx264 -preset veryfast -b:v 2000k \
+  -c:a aac -b:a 128k \
+  output-libx264.mp4
+
+
+2. Convert with h264_qsv (Intel Quick Sync) Hardware accelerated:
+ffmpeg -hwaccel qsv -i input.mp4 \
+  -c:v h264_qsv -preset veryfast -b:v 2000k \
+  -c:a aac -b:a 128k \
+  output-qsv.mp4
